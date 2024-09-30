@@ -1,0 +1,16 @@
+.card-text{
+    font-size: 14px;
+    font-family: "Marck Script", sans-serif;
+}
+
+.card-title {
+    font-size: 2em; /* เพิ่มขนาดฟอนต์หัวข้อ */
+}
+
+.card-text {
+    font-size: 1.5em; /* เพิ่มขนาดฟอนต์เนื้อหา */
+}
+
+.card-footer {
+    font-size: 1em; /* ขนาดฟอนต์ของ footer */
+}
