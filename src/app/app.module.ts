@@ -10,6 +10,7 @@ import { LoginComponent } from './admin/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductComponent } from './product/productcomponent';
 import { UsersService } from './services/users.service';
+import { FilterComponent } from './filter/filter.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { UsersService } from './services/users.service';
     AboutUsComponent,
     ContactUsComponent,
     LoginComponent,
+    FilterComponent,
   ],
   imports: [
     BrowserModule,

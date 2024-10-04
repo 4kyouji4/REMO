@@ -1,0 +1,145 @@
+<div class="filter-container text-center">
+    <h2>Filter Mobiles</h2>
+  
+    <!-- กรองด้วยแบรนด์ -->
+    <div>
+      <label for="brand">Brand:</label>
+      <select id="brand" [(ngModel)]="selectedBrand">
+        <option value="">All</option>
+        <option value="POCO">POCO</option>
+        <option value="Samsung">Samsung</option>
+        <option value="Vivo">Vivo</option>
+        <option value="Xiaomi">Xiaomi</option>
+        <option value="TECNO">TECNO</option>
+      </select>
+    </div>
+  
+    <!-- กรองด้วยเครือข่าย -->
+    <div>
+      <label for="network">Network:</label>
+      <select id="network" [(ngModel)]="selectedNetwork">
+        <option value="">All</option>
+        <option value="5G">5G</option>
+        <option value="4G">4G</option>
+      </select>
+    </div>
+
+     <!-- กรองด้วยการเชื่อมต่อ USB -->
+     <div>
+        <label for="usb">USB:</label>
+        <select id="usb" [(ngModel)]="selectedUSB">
+          <option value="">All</option>
+          <option value="MicroUSB">MicroUSB</option>
+          <option value="Type-C">Type-C</option>
+          <option value="Lightning">Lightning</option>
+        </select>
+      </div>
+  
+    <!-- ขนาดหน้าจอ(อาจจะแก้) -->
+    <div>
+    <label for="screen">ScreenSize:</label>
+    <select id="screen" [(ngModel)]="selectedScreenSize">
+      <option value="">All</option>
+      <option value="4.0">4.0 นิ้ว</option>
+      <option value="5.0">5.0 นิ้ว</option>
+      <option value="6.0">6.0 นิ้ว</option>
+    </select>
+  </div>
+
+    <!-- กล้องหลัง(อาจจะแก้) -->
+    <div>
+    <label for="camera">Camera:</label>
+    <select id="camera" [(ngModel)]="selectedCamera">
+      <option value="">All</option>
+      <option value="low">5-12 MP</option>
+      <option value="medium">12-20 MP</option>
+      <option value="high">48-64 MP</option>
+      <option value="ultra">108 MP ขึ้นไป</option>
+    </select>
+  </div>
+
+    <!-- CPU -->
+    <div>
+    <label for="CPU">CPU:</label>
+    <select id="CPU" [(ngModel)]="selectedCPU">
+      <option value="">All</option>
+      <option value="Snapdragon 4 Series">Snapdragon 4 Series</option>
+      <option value="Snapdragon 6 Series">Snapdragon 6 Series</option>
+      <option value="Snapdragon 7 Series">Snapdragon 7 Series</option>
+      <option value="Snapdragon 8 Series">Snapdragon 8 Series</option>
+      <option value="A-Series">A-Series</option>
+      <option value="Dimensity Series">Dimensity Series</option>
+      <option value="Helio Series">Helio Series</option>
+      <option value="Exynos Series">Exynos Series</option>
+      <option value="Kirin Series">Kirin Series</option>
+      <option value="Tensor">Tensor</option>
+      <option value="RK Series">RK Series</option>
+      <option value="Tiger Series">Tiger Series</option>
+      <option value="Spreadtrum">Spreadtrum</option>
+    </select>
+</div>
+
+    <!-- แบตเตอรี่(อาจจะแก้) -->
+    <div>
+        <label for="battery">Battery:</label>
+        <select id="battery" [(ngModel)]="selectedBattery">
+          <option value="">All</option>
+          <option value="2000">2,000 mAh - 3,000 mAh</option>
+          <option value="3000">3,000 mAh - 4,000 mAh</option>
+          <option value="4000">4,000 mAh - 5,000 mAh</option>
+          <option value="5000">5,000 mAh ขึ้นไป</option>
+        </select>
+        </div>
+
+    <!-- RAM -->
+    <div>
+    <label for="RAM">RAM:</label>
+    <select id="RAM" [(ngModel)]="selectedRAM">
+      <option value="">All</option>
+      <option value="4GB">4 GB</option>
+      <option value="8GB">8 GB</option>
+      <option value="16GB">16 GB</option>
+      <option value="32GB">32 GB</option>
+    </select>
+    </div>
+
+    <!-- ROM -->
+    <div>
+        <label for="ROM">ROM:</label>
+        <select id="ROM" [(ngModel)]="selectedROM">
+          <option value="">All</option>
+          <option value="16GB">16 GB</option>
+          <option value="32GB">32 GB</option>
+          <option value="64GB">64 GB</option>
+          <option value="128GB">128 GB</option>
+          <option value="256GB">256 GB</option>
+          <option value="512GB">512 GB</option>
+          <option value="1TB">1 TB</option>
+        </select>
+    </div>
+
+    <!-- กรองด้วยราคา -->
+    <div>
+      <label for="minPrice">Min Price:</label>
+      <input type="number" id="minPrice" [(ngModel)]="minPrice" placeholder="Min Price">
+    </div>
+  
+    <div>
+      <label for="maxPrice">Max Price:</label>
+      <input type="number" id="maxPrice" [(ngModel)]="maxPrice" placeholder="Max Price">
+    </div>
+  
+    <!-- ปุ่มรีเซ็ต -->
+    <button (click)="resetFilters()">Reset Filters</button>
+  </div>
+  <hr>
+
+  <!-- แสดงรายการมือถือที่กรองแล้วพร้อมภาพ -->
+  <h1 class="text-center">โทรศัพท์มือถือทั้งหมด</h1>
+  <div class="product-container">
+    <div *ngFor="let mobile of filteredMobiles" class="product-card">
+      <img [src]="mobile.imageUrl" [alt]="mobile.name" width="100" />
+      <h3>{{ mobile.name }}</h3>
+    </div>
+  </div>
+  
