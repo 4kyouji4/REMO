@@ -4,7 +4,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from './about-us/about-us.component';
-import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './admin/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -18,7 +17,6 @@ import { FilterComponent } from './filter/filter.component';
     HomeComponent,
     ProductComponent,
     AboutUsComponent,
-    ContactUsComponent,
     LoginComponent,
     FilterComponent,
   ],

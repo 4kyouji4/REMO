@@ -16,12 +16,13 @@ form {
 
 label {
   text-align: right; /* จัดอักษรชิดขวาให้ตรงกัน */
-  padding-right: 10px;
+  padding-right: 20px;
   font-size: 16px;
 }
 
 select, input {
-  width: 50%; /* กำหนดขนาดเต็มพื้นที่ */
+  
+  width: 100%; /* กำหนดขนาดเต็มพื้นที่ */
   padding: 10px;
   font-size: 16px;
   box-sizing: border-box;
@@ -32,6 +33,7 @@ select, input {
   }
   
   .filter-container div {
+  
     margin-bottom: 10px;
   }
   
@@ -57,6 +59,8 @@ select, input {
   
   button {
     background-color: #ff0000;
+    width: 200px;
+    
     color: white;
     border: none;
     padding: 10px;

@@ -2,9 +2,11 @@
     <h2>Filter Mobiles</h2>
   
     <!-- กรองด้วยแบรนด์ -->
+     <div class="row">
+      <div class="col-6">
     <div>
-      <label for="brand">Brand:</label>
-      <select id="brand" [(ngModel)]="selectedBrand">
+      <label for="brand">Brand:</label><br>
+      <select id="brand" [(ngModel)]="selectedBrand" >
         <option value="">All</option>
         <option value="POCO">POCO</option>
         <option value="Samsung">Samsung</option>
@@ -16,7 +18,7 @@
   
     <!-- กรองด้วยเครือข่าย -->
     <div>
-      <label for="network">Network:</label>
+      <label for="network">Network:</label><br>
       <select id="network" [(ngModel)]="selectedNetwork">
         <option value="">All</option>
         <option value="5G">5G</option>
@@ -26,7 +28,7 @@
 
      <!-- กรองด้วยการเชื่อมต่อ USB -->
      <div>
-        <label for="usb">USB:</label>
+        <label for="usb">USB:</label><br>
         <select id="usb" [(ngModel)]="selectedUSB">
           <option value="">All</option>
           <option value="MicroUSB">MicroUSB</option>
@@ -37,7 +39,7 @@
   
     <!-- ขนาดหน้าจอ(อาจจะแก้) -->
     <div>
-    <label for="screen">ScreenSize:</label>
+    <label for="screen">ScreenSize:</label><br>
     <select id="screen" [(ngModel)]="selectedScreenSize">
       <option value="">All</option>
       <option value="4.0">4.0 นิ้ว</option>
@@ -48,19 +50,19 @@
 
     <!-- กล้องหลัง(อาจจะแก้) -->
     <div>
-    <label for="camera">Camera:</label>
+    <label for="camera">Camera:</label><br>
     <select id="camera" [(ngModel)]="selectedCamera">
       <option value="">All</option>
-      <option value="low">5-12 MP</option>
-      <option value="medium">12-20 MP</option>
-      <option value="high">48-64 MP</option>
+      <option value="low">12 MP</option>
+      <option value="medium">20 MP</option>
+      <option value="high">64 MP</option>
       <option value="ultra">108 MP ขึ้นไป</option>
     </select>
   </div>
 
     <!-- CPU -->
     <div>
-    <label for="CPU">CPU:</label>
+    <label for="CPU">CPU:</label><br>
     <select id="CPU" [(ngModel)]="selectedCPU">
       <option value="">All</option>
       <option value="Snapdragon 4 Series">Snapdragon 4 Series</option>
@@ -78,10 +80,11 @@
       <option value="Spreadtrum">Spreadtrum</option>
     </select>
 </div>
-
+</div>
     <!-- แบตเตอรี่(อาจจะแก้) -->
+      <div class="col-6">
     <div>
-        <label for="battery">Battery:</label>
+        <label for="battery">Battery:</label><br>
         <select id="battery" [(ngModel)]="selectedBattery">
           <option value="">All</option>
           <option value="2000">2,000 mAh - 3,000 mAh</option>
@@ -90,14 +93,17 @@
           <option value="5000">5,000 mAh ขึ้นไป</option>
         </select>
         </div>
+      
+
 
     <!-- RAM -->
     <div>
-    <label for="RAM">RAM:</label>
+    <label for="RAM">RAM:</label><br>
     <select id="RAM" [(ngModel)]="selectedRAM">
       <option value="">All</option>
       <option value="4GB">4 GB</option>
       <option value="8GB">8 GB</option>
+      <option value="12GB">12 GB</option>
       <option value="16GB">16 GB</option>
       <option value="32GB">32 GB</option>
     </select>
@@ -105,7 +111,7 @@
 
     <!-- ROM -->
     <div>
-        <label for="ROM">ROM:</label>
+        <label for="ROM">ROM:</label><br>
         <select id="ROM" [(ngModel)]="selectedROM">
           <option value="">All</option>
           <option value="16GB">16 GB</option>
@@ -120,18 +126,19 @@
 
     <!-- กรองด้วยราคา -->
     <div>
-      <label for="minPrice">Min Price:</label>
+      <label for="minPrice">Min Price:</label><br>
       <input type="number" id="minPrice" [(ngModel)]="minPrice" placeholder="Min Price">
     </div>
   
     <div>
-      <label for="maxPrice">Max Price:</label>
+      <label for="maxPrice">Max Price:</label><br>
       <input type="number" id="maxPrice" [(ngModel)]="maxPrice" placeholder="Max Price">
     </div>
-  
-    <!-- ปุ่มรีเซ็ต -->
-    <button (click)="resetFilters()">Reset Filters</button>
   </div>
+  </div>
+
+  <!-- ปุ่มรีเซ็ต -->
+    <button (click)="resetFilters()">Reset Filters</button>
   <hr>
 
   <!-- แสดงรายการมือถือที่กรองแล้วพร้อมภาพ -->

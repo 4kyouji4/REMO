@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { bottom } from '@popperjs/core';
 
 @Component({
   selector: 'app-filter',
@@ -22,7 +23,9 @@ export class FilterComponent {
       RAM : '8GB',
       ROM : '128GB',
       imageUrl: 'assets/poco-x6-pro.jpg' // เพิ่มภาพมือถือ
+      
     },
+    
     {
       name: 'Samsung Galaxy M05',
       price: 29847,
@@ -150,7 +153,7 @@ export class FilterComponent {
       imageUrl: 'assets/images/GalaxyA73.jpg'
     },
     {
-      name: 'Samsungo	Galaxy S21 Ultra',
+      name: 'Samsung	Galaxy S21 Ultra',
       price: 41900,
       brand: 'Samsung',
       usb: 'Type-C',
@@ -164,7 +167,7 @@ export class FilterComponent {
       imageUrl: 'assets/images/GalaxyS21Ultra.jpg'
     },
     {
-      name: 'Samsungo	Galaxy Z Fold3',
+      name: 'Samsung	Galaxy Z Fold3',
       price: 56900,
       brand: 'Samsung',
       usb: 'Type-C',
@@ -330,6 +333,7 @@ export class FilterComponent {
       RAM : '12GB',
       ROM : '512GB',
       imageUrl: 'assets/images/OPPOFindX5Pro.jpg'
+      
     },
     {
       name: 'OPPO Reno 11F',
@@ -381,7 +385,7 @@ export class FilterComponent {
       screen: '6.78',
       network: '5G',
       camera : '50 MP',
-      CPU : 'Snapdragon 8 series5',
+      CPU : 'Snapdragon 8 series',
       battery : '5000mAh',
       RAM : '12GB',
       ROM : '256GB',
@@ -481,7 +485,7 @@ export class FilterComponent {
       const matchesScreenSize = this.selectedScreenSize ? mobile.screen === this.selectedScreenSize: true;
       const matchesCamera = this.selectedCamera ? mobile.camera === this.selectedCamera : true;
       const matchesCPU = this.selectedCPU ? mobile.CPU === this.selectedCPU : true;
-      const matchesBattery = this.selectedBattery ? mobile.battery === this.selectedBattery : true;
+      const matchesBattery = this.selectedBattery ? mobile.battery >= this.selectedBattery && mobile.battery <= this.selectedBattery: true;
       const matchesRAM = this.selectedRAM ? mobile.RAM === this.selectedRAM : true;
       const matchesROM = this.selectedROM ? mobile.ROM === this.selectedROM : true;
       const matchesMinPrice = this.minPrice ? mobile.price >= this.minPrice : true;
