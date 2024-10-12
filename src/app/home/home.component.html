@@ -1,41 +1,180 @@
 <img src="/assets/images/Homepage.jpg" class="img-fluid" alt="..." >
 
-<div class="container mt-4" style="margin-bottom: 100px;">
-  <h2 class="text-center">โทรศัพท์มือถือยอดนิยม</h2>
-  <div class="row">
-    <div class="col-md-3">
-      <div class="card text-center">
-        <img src="/assets/images/Apple iPhone 16 Plus.jpg" class="card-img-top" alt="Product 1">
-        <div class="card-body-sm">
-          <p class="card-text">Apple iPhone 16 Plus<br>...</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card text-center">
-        <img src="/assets/images/GP90.jpg" class="card-img-top" alt="Product 2">
-        <div class="card-body-sm">
-          <p class="card-text">Google Pixel 9<br>...</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card text-center">
-        <img src="/assets/images/oneplus12.jpg" class="card-img-top" alt="Product 3">
-        <div class="card-body-sm">
-          <p class="card-text">One Plus 12<br>...</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card text-center">
-        <img src="/assets/images/Samsung Galaxy S24 Ultra.webp" class="card-img-top" alt="Product 4" >
-        <div class="card-body-sm">
-          <p class="card-text">Samsung Galaxy S24 Ultra<br>...</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Product Popup</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
 
+    <div class="container mt-4" style="margin-bottom: 100px;">
+        <h2 class="text-center">โทรศัพท์มือถือยอดนิยม</h2>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <img src="/assets/images/Apple iPhone 16 Plus.jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body-sm">
+                        <p class="card-text">Apple iPhone 16 Plus</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#product1Modal">More Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <img src="/assets/images/GP90.jpg" class="card-img-top" alt="Product 2">
+                    <div class="card-body-sm">
+                        <p class="card-text">Google Pixel 9</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#product2Modal">More Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <img src="/assets/images/oneplus12.jpg" class="card-img-top" alt="Product 3">
+                    <div class="card-body-sm">
+                        <p class="card-text">One Plus 12</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#product3Modal">More Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <img src="/assets/images/Samsung Galaxy S24 Ultra.webp" class="card-img-top" alt="Product 4">
+                    <div class="card-body-sm">
+                        <p class="card-text">Samsung Galaxy S24 Ultra</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#product4Modal">More Info</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals for each product with phone specifications, cost, and buy link -->
+
+    <!-- Modal for Product 1: Apple iPhone 16 Plus -->
+    <div class="modal fade" id="product1Modal" tabindex="-1" aria-labelledby="product1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="product1ModalLabel">Apple iPhone 16 Plus Specifications</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="/assets/images/Apple iPhone 16 Plus.jpg" class="img-fluid mb-3" alt="Product 1">
+                    <ul>
+                        <li>Display: 6.7-inch OLED</li>
+                        <li>Processor: A16 Bionic chip</li>
+                        <li>RAM: 8 GB</li>
+                        <li>Storage: 256 GB</li>
+                        <li>Battery: 4000 mAh</li>
+                        <li>Camera: 12 MP front, 48 MP rear</li>
+                        <li>OS: iOS 16</li>
+                    </ul>
+                    <!-- Display the cost -->
+                    <p><strong>Cost:</strong> $1,099</p>
+                    <!-- Buy Now Button -->
+                    <a href="https://www.apple.com/iphone-16" target="_blank" class="btn btn-success">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Product 2: Google Pixel 9 -->
+    <div class="modal fade" id="product2Modal" tabindex="-1" aria-labelledby="product2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="product2ModalLabel">Google Pixel 9 Specifications</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="/assets/images/GP90.jpg" class="img-fluid mb-3" alt="Product 2">
+                    <ul>
+                        <li>Display: 6.5-inch AMOLED</li>
+                        <li>Processor: Google Tensor G3</li>
+                        <li>RAM: 8 GB</li>
+                        <li>Storage: 128 GB / 256 GB</li>
+                        <li>Battery: 4600 mAh</li>
+                        <li>Camera: 50 MP rear, 12 MP ultrawide</li>
+                        <li>OS: Android 13</li>
+                    </ul>
+                    <!-- Display the cost -->
+                    <p><strong>Cost:</strong> $899</p>
+                    <!-- Buy Now Button -->
+                    <a href="https://store.google.com/pixel_9" target="_blank" class="btn btn-success">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Product 3: One Plus 12 -->
+    <div class="modal fade" id="product3Modal" tabindex="-1" aria-labelledby="product3ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="product3ModalLabel">One Plus 12 Specifications</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="/assets/images/oneplus12.jpg" class="img-fluid mb-3" alt="Product 3">
+                    <ul>
+                        <li>Display: 6.7-inch Fluid AMOLED</li>
+                        <li>Processor: Snapdragon 8 Gen 3</li>
+                        <li>RAM: 12 GB</li>
+                        <li>Storage: 256 GB</li>
+                        <li>Battery: 5000 mAh</li>
+                        <li>Camera: 48 MP rear, 16 MP front</li>
+                        <li>OS: OxygenOS based on Android 13</li>
+                    </ul>
+                    <!-- Display the cost -->
+                    <p><strong>Cost:</strong> $799</p>
+                    <!-- Buy Now Button -->
+                    <a href="https://www.oneplus.com/oneplus-12" target="_blank" class="btn btn-success">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Product 4: Samsung Galaxy S24 Ultra -->
+    <div class="modal fade" id="product4Modal" tabindex="-1" aria-labelledby="product4ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="product4ModalLabel">Samsung Galaxy S24 Ultra Specifications</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="/assets/images/Samsung Galaxy S24 Ultra.webp" class="img-fluid mb-3" alt="Product 4">
+                    <ul>
+                        <li>Display: 6.8-inch Dynamic AMOLED</li>
+                        <li>Processor: Exynos 2400 / Snapdragon 8 Gen 3</li>
+                        <li>RAM: 12 GB</li>
+                        <li>Storage: 256 GB / 512 GB</li>
+                        <li>Battery: 5000 mAh</li>
+                        <li>Camera: 200 MP rear, 12 MP front</li>
+                        <li>OS: One UI 6 based on Android 14</li>
+                    </ul>
+                    <!-- Display the cost -->
+                    <p><strong>Cost:</strong> $1,199</p>
+                    <!-- Buy Now Button -->
+                    <a href="https://www.samsung.com/galaxy-s24-ultra" target="_blank" class="btn btn-success">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
 
