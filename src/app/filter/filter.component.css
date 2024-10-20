@@ -31,46 +31,11 @@ select, input {
     border-radius: 5px;
   }
   
-  /* ลดขนาดฟอนต์และจัดการ padding ของการ์ด */
-.card {
-  width: 400px;
-  margin: 20px;
-  font-size: 0.85rem; /* ปรับขนาดฟอนต์ให้เล็กลง */
-  padding: 10px; /* ลด padding ของการ์ด */
-  border-radius: 10px;
-}
-
-.card img {
-  width: 100%; /* Ensure the image fits inside the card */
-  height: auto;
+  .card {
+    margin: 20px; /* เพิ่มช่องว่างระหว่างการ์ด */
+  }
   
-}
-
-.card-title {
-  font-size: 1rem; /* ปรับขนาดหัวข้อ */
-  margin-bottom: 8px;
-}
-
-.card-text {
-  margin-bottom: 6px; /* ลดระยะห่างระหว่างข้อความแต่ละบรรทัด */
-}
-
-
-.row {
-  margin-left: -5px;
-  margin-right: -5px;
-  
-}
-
-.col-md-4 {
-  padding-left: 5px;
-  padding-right: 5px; /* ลดระยะห่างระหว่างการ์ดในกริด */
-  
-}
-
-.card-container {
-  display: flex;
-  justify-content: space-between; /* ให้การ์ดแต่ละใบอยู่ห่างกัน */
-  gap: 10px; /* ระยะห่างระหว่างการ์ด */
-  
-}
+  .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
