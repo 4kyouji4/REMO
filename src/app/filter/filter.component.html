@@ -69,29 +69,29 @@
 
   
   <!-- แสดงรายการมือถือที่แนะนำ -->
-    <br><h2 class="text-center">Recommended Mobiles</h2>
-    <div class="container">
-    <div class="row justify-content-center" *ngIf="recommendedMobiles.length > 0">
-      <div class="col-4" *ngFor="let mobile of recommendedMobiles">
-        <div class="card h-100">
-          <img [src]="mobile.image" class="card-img-top" alt="{{mobile.model}}">
-          <div class="card-body">
-            <h5 class="card-title">{{ mobile.brand }} {{ mobile.model }}</h5>
-            <p class="card-text"><strong>Screen Size:</strong> {{ mobile.screenSize }} inches</p>
-            <p class="card-text"><strong>Battery:</strong> {{ mobile.battery }} mAh</p>
-            <p class="card-text"><strong>OS:</strong> {{ mobile.os }}</p>
-            <p class="card-text"><strong>Price:</strong> {{ mobile.price }} THB</p>
-            <p class="card-text"><strong>Network:</strong> {{ mobile.network }}</p>
-            <p class="card-text"><strong>Camera:</strong> {{ mobile.camera }} MP</p>
-            <p class="card-text"><strong>CPU:</strong> {{ mobile.cpu }}</p>
-            <p class="card-text"><strong>RAM:</strong> {{ mobile.ram }} GB</p>
-            <p class="card-text"><strong>ROM:</strong> {{ mobile.rom }} GB</p>
-            <a [href]="mobile.buylink" target="_blank">Go</a>
-          </div>
+  <br><h2 class="text-center">Recommended Mobiles</h2>
+  <div class="container">
+  <div class="row g-4 justify-content-center" *ngIf="recommendedMobiles.length > 0">
+    <div class="col-md-4 col-sm-6" *ngFor="let mobile of recommendedMobiles">
+      <div class="card h-100">
+        <img [src]="mobile.image" class="card-img-top" alt="{{mobile.model}}">
+        <div class="card-body">
+          <h5 class="card-title">{{ mobile.brand }} {{ mobile.model }}</h5>
+          <p class="card-text"><strong>Screen Size:</strong> {{ mobile.screenSize }} inches</p>
+          <p class="card-text"><strong>Battery:</strong> {{ mobile.battery }} mAh</p>
+          <p class="card-text"><strong>OS:</strong> {{ mobile.os }}</p>
+          <p class="card-text"><strong>Price:</strong> {{ mobile.price }} THB</p>
+          <p class="card-text"><strong>Network:</strong> {{ mobile.network }}</p>
+          <p class="card-text"><strong>Camera:</strong> {{ mobile.camera }} MP</p>
+          <p class="card-text"><strong>CPU:</strong> {{ mobile.cpu }}</p>
+          <p class="card-text"><strong>RAM:</strong> {{ mobile.ram }} GB</p>
+          <p class="card-text"><strong>ROM:</strong> {{ mobile.rom }} GB</p>
+          <a [href]="mobile.buylink" target="_blank">Go</a>
         </div>
       </div>
     </div>
   </div>
+</div>
   
 
   <!-- ถ้าไม่มีการแนะนำมือถือ -->
