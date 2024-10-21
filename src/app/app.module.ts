@@ -10,7 +10,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductComponent } from './product/productcomponent';
 import { UsersService } from './services/users.service';
 import { FilterComponent } from './filter/filter.component';
+<<<<<<< HEAD
 import { ReviewComponent } from './review/review.component';
+=======
+import { NewsComponent } from './news/news.component';
+>>>>>>> 002f1fa4af40d47f51a8d41218ae1b743321adcf
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { ReviewComponent } from './review/review.component';
     AboutUsComponent,
     LoginComponent,
     FilterComponent,
+<<<<<<< HEAD
     ReviewComponent,
+=======
+    NewsComponent,
+>>>>>>> 002f1fa4af40d47f51a8d41218ae1b743321adcf
   ],
   imports: [
     BrowserModule,
