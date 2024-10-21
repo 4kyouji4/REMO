@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductComponent } from './product/productcomponent';
 import { UsersService } from './services/users.service';
 import { FilterComponent } from './filter/filter.component';
+import { ReviewComponent } from './review/review.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { FilterComponent } from './filter/filter.component';
     AboutUsComponent,
     LoginComponent,
     FilterComponent,
+    ReviewComponent,
   ],
   imports: [
     BrowserModule,

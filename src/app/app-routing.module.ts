@@ -5,6 +5,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { LoginComponent } from './admin/login/login.component';
 import { ProductComponent } from './product/productcomponent';
 import { FilterComponent } from './filter/filter.component';
+import { ReviewComponent } from './review/review.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' }, 
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'product', component: ProductComponent },
   { path: 'filter', component: FilterComponent },
   { path: 'about-us', component: AboutUsComponent }, 
+  { path: 'review', component: ReviewComponent },
   { path: 'admin/admin-login', component: LoginComponent },,
   { path: 'admin', redirectTo: 'admin/admin-login', pathMatch: 'full' }
 ];
