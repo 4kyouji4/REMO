@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Product Popup</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        h1 {
+            font-size: 36px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-4" style="margin-bottom: 100px;">
+        <h1 class="text-center">News</h1>
+        <h2 class="text-center">ข่าวสารโทรศัพท์มือถือ</h2>
+        <br>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <img src="/assets/images/News1.jpg" class="card-img-top" alt="News1">
+                    <div class="card-body-sm">
+                        <p class="card-text">หลุดภาพเครื่องจริง Samsung Galaxy Z Fold6 Special Edition
+                            ก่อนเปิดตัวจริงวันนี้</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#News1Modal">More
+                            Info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <img src="/assets/images/News2.jpg" class="card-img-top" alt="News2">
+                    <div class="card-body-sm">
+                        <p class="card-text">iPhone SE 4 เครื่องดัมมี่มาแล้ว พบใช้เคส iPhone 14 ได้
+                            อาจมาพร้อมตัวเลือกรุ่น Plus เป็นครั้งแรก</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#News2Modal">More
+                            Info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <img src="/assets/images/News3.jpg" class="card-img-top" alt="News3">
+                    <div class="card-body-sm">
+                        <p class="card-text">ข้อมูลเผย ยอดขาย iPhone 15 ใน Q3 ทำได้ดี ดันยอดส่วนแบ่งตลาดอันดับหนึ่งที่
+                            18% เท่า Samsung</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#News3Modal">More
+                            Info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <img src="/assets/images/News4.jpg" class="card-img-top" alt="News4">
+                    <div class="card-body-sm">
+                        <p class="card-text">รายงานเผย Samsung กำลังพัฒนาระบบใหม่ใน Galaxy AI
+                            ที่ให้ผู้ใช้แทบไม่ต้องเข้าไปตั้งค่าเครื่องเลย</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#News4Modal">More
+                            Info</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="News1Modal" tabindex="-1" aria-labelledby="News1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="News1ModalLabel">หลุดภาพเครื่องจริง Samsung Galaxy Z Fold6 Special
+                        Edition ก่อนเปิดตัวจริงวันนี้</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <img src="/assets/images/News1_1.jpg" class="img-fluid mb-3" alt="News1_1">
+                        <h6>ตามที่มีประกาศอย่างเป็นทางการจาก Samsung ว่าจะมีการเปิดตัวผลิตภัณฑ์ใหม่ในวันนี้
+                            ซึ่งก็คาดการณ์กันว่า น่าจะเป็นมือถือจอพับ Samsung Galaxy Z Fold6 Special Edition
+                            ที่จะเน้นในด้านความบางของตัวเครื่องที่บาง ยิ่งกว่ารุ่นปกติเข้าไปอีก</h6>
+                        <br>
+                        <h6>ล่าสุดมีภาพตัวเครื่องจริงหลุดออกมา โดยต้นทางระบุว่าเป็นรุ่นที่จะวางจำหน่ายในประเทศจีน
+                            ซึ่งน่าจะทำตลาดในชื่อ Samsung Galaxy W25
+                            สังเกตได้จากโลโก้ด้านล่างของฝาหลังซึ่งจะใช้เป็นโลโก้สำหรับมือถือ Samsung
+                            รุ่นจอพับที่ทำตลาดในจีนเท่านั้น ส่วนในเกาหลีใต้และอาจรวมถึงประเทศอื่นก็จะใช้เป็นชื่อ Galaxy
+                            Z Fold Special Edition ทั้งหมด</h6>
+                        <br>
+                        <h6>โดยในภาพที่หลุดออกมาจะยังไม่มีรายละเอียดเกี่ยวกับตัวเครื่องมากนัก
+                            รวมถึงไม่มีการเปิดใช้งานด้วย แต่จะสังเกตได้ว่าตัวเครื่องมีความบางกว่ารุ่นปกติ ซึ่งล่าสุด
+                            ภาพจากทวิตต้นทาง (&#64;Jukanlosreve) ได้ถูกลบไปแล้ว</h6>
+                        <br>
+                        <h6>ที่มา: GizmoChina, &#64;Jukanlosreve</h6>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="News2Modal" tabindex="-1" aria-labelledby="News2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="News2ModalLabel">iPhone SE 4 เครื่องดัมมี่มาแล้ว พบใช้เคส iPhone 14 ได้
+                        อาจมาพร้อมตัวเลือกรุ่น Plus เป็นครั้งแรก</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <img src="/assets/images/News2_1.jpg" class="img-fluid mb-3" alt="News2_1">
+                        <h6>iPhone รุ่นต่อไปที่คาดว่าจะได้รับการเปิดตัวก็คือ iPhone SE 4
+                            ซึ่งเป็นไปได้สูงมากว่าจะเปิดตัวพร้อมวางจำหน่ายในช่วงต้นปีหน้า
+                            ล่าสุดก็เริ่มมีเครื่องดัมมี่หลุดออกมาให้ชมกัน
+                            ซึ่งโดยปกติแล้วจะได้รับการผลิตมาให้มีขนาดเท่ากับเครื่องจริง
+                            ทำให้พอจะช่วยยืนยันข้อมูลในหลายจุดเพิ่มเติมได้</h6>
+                        <br>
+                        <h6>โดยเป็นภาพมาจาก Macotakara บล็อกเกอร์สาย Apple ในญี่ปุ่น เผยให้เห็นหน้าตา iPhone SE รุ่นที่
+                            4 แบบคร่าว ๆ ซึ่งจุดที่น่าสนใจก็คือดันมีออกมาสองขนาด
+                            ทำให้มีความเป็นไปได้ว่าเราอาจจะได้เห็นการเปิดตัว iPhone SE ของปี 2025
+                            ออกมาเป็นสองรุ่นย่อยคือรุ่นปกติ 6.1″ และรุ่น Plus แต่ในจุดนี้ Macotakara
+                            ระบุว่ายังอยู่ในระหว่างการพิจารณาของ Apple อยู่ ว่าจะตัดสินใจเปิดตัวรุ่นจอใหญ่ด้วยหรือไม่
+                        </h6>
+                        <br>
+                        <h6>กลับมาที่เครื่องดัมมี่ที่หลุดออกมา Macotakara ระบุว่ามิติเครื่องโดยรวมจะเท่ากับ iPhone 14
+                            เลย คือมีขนาด 146.7 x 71.5 x 7.8 มม. รวมถึงยังสามารถใช้เคสแบบ TPU นิ่มของ iPhone 14
+                            และฟิล์มกันรอยหน้าจอของ iPhone 13, 13 Pro และ 14 ได้ด้วย พอร์ตชาร์จน่าจะเปลี่ยนมาใช้ USB-C
+                            จะมีจุดที่แตกต่างกันก็คือบริเวณกล้องหลังซึ่งเคส iPhone 14 จะถูกตัดช่องมาให้รองรับกล้องคู่
+                            ในขณะที่ของ SE 4 จะมีกล้องเพียงตัวเดียว ทำให้ชุดกล้องหลังมีขนาดเล็กกว่า
+                            และอีกจุดคือสวิตช์ปิดเสียงด้านข้างที่จะมีขนาดเล็กกว่า iPhone 14 ด้วย
+                            ทำให้ดูไม่ค่อยพอดีกับช่องของเคส iPhone 14 เท่าไหร่</h6>
+                        <br>
+                        <img src="/assets/images/News2_2.jpg" class="img-fluid mb-3" alt="News2_2">
+                        <br>
+                        <h6>ที่มา: 9to5Mac, Macotakara</h6>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="News3Modal" tabindex="-1" aria-labelledby="News3ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="News3ModalLabel">iPhone SE 4 เครื่องดัมมี่มาแล้ว พบใช้เคส iPhone 14 ได้
+                        อาจมาพร้อมตัวเลือกรุ่น Plus เป็นครั้งแรก</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <img src="/assets/images/News3_1.jpg" class="img-fluid mb-3" alt="News3_1">
+                        <h6>หลังผ่านช่วงไตรมาสที่ 3 ของปีไป
+                            ตอนนี้ก็เริ่มมีข้อมูลเรื่องส่วนแบ่งตลาดสมาร์ตโฟนออกมาให้ติดตามกันบ้างแล้ว
+                            โดยในข่าวนี้จะเป็นข้อมูลจาก Canalys เผยยอดการส่งออกสมาร์ตโฟนในภาพรวมทั้งโลก
+                            และส่วนแบ่งตลาดของแต่ละแบรนด์ ซึ่งจุดที่น่าสนใจคือรอบนี้ Apple จัดว่าทำยอดใน Q3
+                            ได้ค่อนข้างดี ส่วนหนึ่งก็มาจากยอดขาย iPhone 15 ที่สูง (iPhone 16 เปิดขายช่วงปลาย Q3
+                            จึงยังไม่ส่งผลกับข้อมูลชุดนี้มากนัก)</h6>
+                        <br>
+                        <h6>เริ่มต้นกันที่ยอดส่งออกในระดับโลกกันก่อน Canalys ระบุว่ายอดการส่งออกในช่วง Q3
+                            นี้เมื่อเทียบกับช่วงเวลาเดียวกันของปีก่อน พบว่ามีการเติบโตขึ้นราว 5% ส่วนถ้าเทียบภายในปี
+                            2024 ด้วยกันก็ถือว่าเป็นช่วงที่มียอดส่งออกสูงที่สุดอีกด้วย โดยตัวเลขจะอยู่ที่ประมาณ 300
+                            กว่าล้านเครื่อง
+                        </h6>
+                        <br>
+                        <img src="/assets/images/News3_2.jpg" class="img-fluid mb-3" alt="News3_2">
+                        <h6>ทาง Canalys ก็ให้ข้อสันนิษฐานไว้ว่าน่าจะเกิดจากว่าเป็นช่วงเริ่มต้นของรอบการเปลี่ยนมือถือ
+                            และหลังจากนี้อาจจะมีการเติบโตอย่างต่อเนื่องขึ้นไปอีก ส่วนถ้าแยกดูข้อมูลการส่งออกตามแบรนด์
+                            พบว่า 6 อันดับสูงสุดมีดังนี้</h6>
+                        <h6>1. Apple กับ Samsung ที่ 18%</h6>
+                        <h6>2. Xiaomi 14%</h6>
+                        <h6>3. OPPO (รวม OnePlus) และ vivo ที่ 9%</h6>
+                        <h6>4. แบรนด์อื่น ๆ 32%</h6>
+                        <br>
+                        <img src="/assets/images/News3_3.jpg" class="img-fluid mb-3" alt="News3_3">
+                        <h6>ซึ่งถ้าดูจากกราฟก็จะเห็นว่าแบรนด์ที่มีอัตราการเติบโต กราฟมีแนวโน้มชันขึ้นก็จะเป็นฝั่งของ
+                            Xiaomi ที่ตอนนี้จัดว่ายึดตำแหน่งแบรนด์สมาร์ตโฟนอันดับสามได้อย่างค่อนข้างมั่นคง ส่วนฝั่งของ
+                            OPPO และ vivo จะมีความชันที่ตกลงเล็กน้อย แต่ก็ดูจะมีแนวโน้มที่ดีและอาจพุ่งขึ้นในอนาคต
+                            ส่วนหนึ่งก็มาจากยอดขายที่ทำได้ดีทั้งในอินเดียและแถบประเทศในลาตินอเมริกา อย่างในฝั่งของ vivo
+                            เองก็มียอดการส่งออกเพิ่มขึ้นเป็นตัวเลขสองหลักเลยทีเดียว
+                            ประกอบกับแต่ละแบรนด์ก็เริ่มมีการทำโปรโมชันก่อนเข้าสู่ช่วงวันหยุดส่งท้ายปี
+                            ทำให้ส่วนต่างระหว่างแต่ละแบรนด์ในกลุ่มระดับท็อปนั้นแคบลงมากว่าเดิม</h6>
+                        <br>
+                        <h6>ด้านของ Samsung ก็มีกราฟที่ความชันตกลงมาเล็กน้อย ซึ่งต้องจับตาดูตอนช่วง Q1 2025 กันอีกที
+                            เพราะจะเป็นช่วงที่มีการเปิดตัวมือถือเรือธงในกลุ่ม Galaxy S อยู่เป็นประจำ
+                            ก็จะช่วยเพิ่มยอดการส่งออกและส่วนแบ่งตลาดให้กลับขึ้นไปสูงได้ตามรอบอยู่แล้ว คล้ายกับฝั่ง Apple
+                            ที่ก็จะมีช่วงดังกล่าวอยู่เหมือนกัน แต่จะเป็นใน Q4
+                            ของแต่ละปีที่กราฟจะพุ่งขึ้นสูงตามรอบการเปิดตัว iPhone รุ่นใหม่
+                            ก่อนที่จะลดลงมาแล้วมาเริ่มพุ่งเล็กน้อยอีกครั้งในช่วง Q3ง
+                        </h6>
+                        <br>
+                        <h6>แต่สำหรับปีนี้จะมีจุดที่น่าสนใจคือ Q3 ในปีนี้ของ Apple มียอดการส่งออก iPhone
+                            ที่พุ่งสูงขึ้นกว่าปีก่อน ๆ จนทำให้จัดว่าเป็นยอด Q3 ที่สูงสุดของ Apple
+                            และดันให้ขึ้นไปเทียบกับ Samsung ได้เลยทีเดียว ในจุดนี้ Canalys
+                            ให้ความเห็นว่าน่าจะมาจากยอดขาย iPhone 15 ที่สูงมากก่อน ควบคู่กับ iPhone
+                            รุ่นก่อนหน้าที่ยังมีวางจำหน่ายอยู่ ก่อนจะมีการเปิดตัว iPhone 16
+                            ประกอบกับผู้บริโภคมีแนวโน้มที่จะซื้อมือถือในราคาระดับพรีเมียมมากขึ้น
+                            อันเนื่องมาจากเป็นช่วงเริ่มเข้าสู่รอบการผลัดเปลี่ยนเครื่องหลังสถานการณ์โรคระบาดครั้งใหญ่
+                            โดยภูมิภาคที่มีส่วนดันยอด iPhone สูงก็จะเป็นในอเมริกาเหนือและยุโรปเป็นหลัก
+                            รวมถึงระบบการจัดส่งผลิตภัณฑ์ของ Apple ที่ทำได้ดี ทำให้สามารถส่งสินค้าถึงมือผู้ใช้ได้เร็ว
+                            ซึ่งน่าจะส่งผลดีมาถึงช่วง Q4 ที่มีการวางจำหน่าย iPhone 16 แบบเต็มตัวด้วย
+                            และอีกช่วงเวลาที่น่าจับตามองก็คือช่วงครึ่งปีแรกของปีหน้า ที่ระบบ AI อย่าง Apple Intelligence
+                            จะเปิดให้ใช้งานอย่างเป็นทางการแบบแทบครบทุกฟังก์ชันในหลากประเทศ​ หลายภาษา
+                            ว่าจะมีส่วนช่วยดันยอด iPhone ได้ขนาดไหน</h6>
+                        <br>
+                        <h6>ที่มา: 9to5Mac, Canalys</h6>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="News4Modal" tabindex="-1" aria-labelledby="News4ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="News4ModalLabel">รายงานเผย Samsung กำลังพัฒนาระบบใหม่ใน Galaxy AI
+                        ที่ให้ผู้ใช้แทบไม่ต้องเข้าไปตั้งค่าเครื่องเลย</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <img src="/assets/images/News4_1.jpg" class="img-fluid mb-3" alt="News4_1">
+                        <h6>ล่าสุดมีรายงานมาจากสำนักข่าว ETNews ในเกาหลีใต้ระบุว่า Samsung
+                            กำลังพัฒนาฟังก์ชันใหม่ให้กับระบบ AI ของตนเอง
+                            ที่จะช่วยเพิ่มประสบการณ์การใช้งานที่สะดวกยิ่งขึ้นให้กับผู้ใช้งาน
+                            โดยจะเข้ามาช่วยปรับตั้งค่าเครื่องให้แบบอัตโนมัติเช่นในด้านของประสิทธิภาพ
+                            และจุดสัมผัสที่ใช้รับข้อมูลจากผู้ใช้ เช่นระบบคีย์บอร์ด
+                            ซึ่งจะเป็นการปรับแต่งให้โดยที่ผู้ใช้แทบไม่ต้องเข้าไปปรับเองในหน้าเมนูการตั้งค่า (Settings)
+                            เลย</h6>
+                        <br>
+                        <h6>Samsung เป็นอีกหนึ่งบริษัทผู้ผลิตสมาร์ตโฟนที่มีการพัฒนาเทคโนโลยีด้าน AI อย่างต่อเนื่อง
+                            โดยเฉพาะหลังจากเปิดตัว Galaxy AI อย่างเป็นทางการ ซึ่งก็มีหลายฟีเจอร์ที่ได้รับความนิยม อาทิ
+                            ระบบแปลภาษา ระบบช่วยถอดความและสรุปข้อมูล ไปจนถึงระบบแต่งภาพ ที่สามารถสร้างภาพขึ้นมาเติม
+                            โดยอิงจากรูปวาดลายเส้น เป็นต้น</h6>
+                        <br>
+                        <h6>อย่างไรก็ตาม หน้าเมนูตั้งค่าก็จะยังคงมีอยู่เหมือนเดิมตามปกติ รวมถึงตัวผู้ช่วยอย่าง Bixby
+                            ก็จะยังสามารถเข้ามาช่วยในการปรับแต่งการตั้งค่าบางส่วนได้เช่นเดิม
+                            ทำให้ท้ายสุดแล้วผู้ใช้งานจะมีทางเลือกในการใช้งานเครื่องที่มากขึ้น และใช้ได้สะดวกขึ้นกว่าเดิม
+                            แต่ทั้งนี้ยังไม่มีข้อมูลออกมาว่าระบบใหม่นี้จะพร้อมให้ใช้งานเมื่อไหร่
+                            คาดว่าอย่างเร็วที่สุดก็คงน่าจะมีการสาธิตการทำงานในการเปิดตัว Samsung Galaxy S25 series
+                            ในช่วงต้นเดือนมกราคมที่จะถึงนี้</h6>
+                        <br>
+                        <h6>ที่มา: BGR, ETNews</h6>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

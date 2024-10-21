@@ -5,6 +5,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { LoginComponent } from './admin/login/login.component';
 import { ProductComponent } from './product/productcomponent';
 import { FilterComponent } from './filter/filter.component';
+import { NewsComponent } from './news/news.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' }, 
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'about-us', component: AboutUsComponent }, 
   { path: 'admin/admin-login', component: LoginComponent },,
   { path: 'admin', redirectTo: 'admin/admin-login', pathMatch: 'full' }
+  ,{ path: 'news', component: NewsComponent }
 ];
 
 @NgModule({
