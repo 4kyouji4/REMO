@@ -1,0 +1,11 @@
+<div class="chat-container">
+    <div *ngFor="let message of messages" [ngClass]="{'user-message': message.user === 'user', 'bot-message': message.user === 'bot'}">
+      {{ message.text }}
+    </div>
+  
+    <div class="message-input">
+      <input [(ngModel)]="userInput" placeholder="พิมพ์ข้อความที่นี่..." (keyup.enter)="sendMessage()" />
+      <button (click)="sendMessage()">ส่ง</button>
+    </div>
+  </div>
+  
